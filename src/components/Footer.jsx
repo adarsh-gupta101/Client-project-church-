@@ -27,7 +27,7 @@ function Footer() {
         <div className="flex flex-col justify-center items-center">
           <MdWbTwilight className="text-5xl" />
           <p>Email Us</p>
-          <p>Church@rmail.com</p>
+          <p>info@zengezabapist.org.com</p>
         </div>
       </div>
       
@@ -51,7 +51,9 @@ function Footer() {
         <p>Get Prayer</p>
         <p>Share a need</p>
       </div>
-      <p className="text-center mt-16">© 2023 Generations Church</p>
+      <p className="text-center mt-16">© 2023 Zenegeza baptist church Church</p>
+      <p className="text-center mt-16">TrendOnline</p>
+
     </div>
   );
 }
