@@ -46,12 +46,12 @@ function Navbar() {
         </div>
 
         {open && (
-          <div className="bg-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around py-24 h-full top-0 z-40 absolute left-0 font-bold">
-            <a>ABOUT</a>
-            <a>EVENTS</a>
-            <a>GATHER</a>
-            <a>GATHER</a>
-            <a>GATHER</a>
+          <div className="bg-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around items-center py-24 h-screen top-0 z-40 absolute left-0 font-bold">
+             <Link to="/about">ABOUT</Link> 
+       <Link to="/events">EVENTS</Link>
+        <Link to="/gather">GATHER</Link>
+        <Link to="/group">Group</Link>
+        <Link to="/new">New</Link>
           </div>
         )}
       </div>
