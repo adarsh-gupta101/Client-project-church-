@@ -52,9 +52,9 @@ function Activity() {
         Activity groups are a great way to connect with others around
         Generations Church with no strings attached.
       </p>
-      <div className="flex mt-16 flex-wrap">
+      <div className="flex mt-16 flex-wrap md:flex-row flex-col">
         {GroupData.map((item) => (
-          <div className="bg-gray-100 rounded-lg shadow-sm hover:shadow w-1/4 m-auto my-4 mt p-3 shadow-gray-400">
+          <div className="bg-gray-100 rounded-lg shadow-sm hover:shadow md:w-1/4 m-auto my-4 mt p-3 shadow-gray-400">
             <img src={item.img} className="" />
             <p className="text-left p-4 text-2xl font-bold">{item.title}</p>
           </div>
@@ -66,9 +66,9 @@ function Activity() {
       <p className="text-center ">
       Ministry Teams are designed to develop community around serving through our passions and gifting.
 
-      <div className="flex mt-16 flex-wrap">
+      <div className="flex mt-16 flex-wrap md:flex-row flex-col">
         {ministryData.map((item) => (
-          <div className="bg-gray-100 shadow-sm rounded-lg hover:shadow w-1/4 m-auto my-4 mt p-3 shadow-gray-400">
+          <div className="bg-gray-100 shadow-sm rounded-lg hover:shadow md:w-1/4 m-auto my-4 mt p-3 shadow-gray-400">
             <img src={item.img} className="" />
             <p className="text-left p-4 text-2xl font-bold">{item.title}</p>
           </div>

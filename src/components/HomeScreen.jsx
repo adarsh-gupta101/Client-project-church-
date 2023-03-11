@@ -36,9 +36,13 @@ function Banner() {
           className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{height:600}}
         />
-        <p className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
-          Because of Jesus
+        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
+          <p>Because of Jesus
         </p>
+        <p className="bg-blue-600 m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+Watch Online            </p>
+          </div> 
+        
       </div>
     </div>
   );
@@ -90,7 +94,7 @@ function Specs() {
 
 function Plug({img}) {
   return (
-    <div className="flex flex-col justify-center items-center mt-16 rounded-lg mx-16">
+    <div className="flex flex-col justify-center items-center mt-16 rounded-lg mx-2 md:mx-16">
       <div className="w-full relative">
         <img src={img ||Iamnew} className="h-72 rounded-xl w-full object-cover" />
         <div className="flex flex-col absolute top-1/2 px-6">

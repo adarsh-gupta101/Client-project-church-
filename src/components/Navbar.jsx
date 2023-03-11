@@ -22,7 +22,7 @@ function Navbar() {
             className="w-24 h-24 object-cover"
             src={logo}
           />
-          <p>Zenegeza baptist church </p>
+          <p>Zenegeza Baptist Church </p>
         </Link>
         <div className="bhm flex md:hidden">
           <Hamburger
