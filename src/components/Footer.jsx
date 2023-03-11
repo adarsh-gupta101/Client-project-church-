@@ -51,7 +51,7 @@ function Footer() {
         <p>Get Prayer</p>
         <p>Share a need</p>
       </div>
-      <p className="text-center mt-16">© 2023 Zenegeza baptist church Church</p>
+      <p className="text-center mt-16">© 2023 Zenegeza baptist church </p>
       <p className="text-center mt-16">TrendOnline</p>
 
     </div>

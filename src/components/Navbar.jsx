@@ -17,11 +17,12 @@ function Navbar() {
   return (
     <div className="p-4 z-10 bg-white sticky top-0">
       <div className="flex justify-between items-center">
-        <Link to="/">
+        <Link to="/" className="flex items-center font-bold text-xl">
           <img
             className="w-24 h-24 object-cover"
             src={logo}
           />
+          <p>Zenegeza baptist church </p>
         </Link>
         <div className="bhm flex md:hidden">
           <Hamburger
