@@ -1,6 +1,7 @@
 import Hamburger from "hamburger-react";
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png"
 
 function Navbar() {
   const [open, setopen] = React.useState(false);
@@ -14,12 +15,12 @@ function Navbar() {
   // }, []);
 
   return (
-    <div className="p-8 z-10 bg-white sticky top-0">
+    <div className="p-4 z-10 bg-white sticky top-0">
       <div className="flex justify-between items-center">
         <Link to="/">
           <img
-            className="w-64"
-            src="https://res.cloudinary.com/thechurchcoproduction/image/fetch/f_auto/https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/03/Asset-52.png"
+            className="w-24 h-24 object-cover"
+            src={logo}
           />
         </Link>
         <div className="bhm flex md:hidden">
