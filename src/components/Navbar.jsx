@@ -40,7 +40,7 @@ function Navbar() {
             <a>GATHER</a>
           </div>
 
-          {open && <div className="bg-white transition-all ease-in-out duration-100 flex flex-col w-3/4 justify-around py-24 h-full top-0 z-40 absolute left-0 font-bold">
+          {open && <div className="bg-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around py-24 h-full top-0 z-40 absolute left-0 font-bold">
             <a>ABOUT</a>
             <a>EVENTS</a>
             <a>GATHER</a>
