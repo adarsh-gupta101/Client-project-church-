@@ -15,9 +15,9 @@ function HomeScreen() {
       
       <Banner />
       <Specs />
-      <Plug />
-      <Plug img={outReach}/>
-      <Plug />
+      <Plug img="https://images.pexels.com/photos/2330141/pexels-photo-2330141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
+      <Plug img={"https://images.pexels.com/photos/1245066/pexels-photo-1245066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}/>
+      <Plug img="https://images.pexels.com/photos/226345/pexels-photo-226345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
       <Plug />
       <Events />
       <Footer />
@@ -33,7 +33,7 @@ function Banner() {
       <div className="relative   ">
         <img
           src={banner}
-          className="mt-12 rounded-xl brightness-[0.7] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
+          className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{height:600}}
         />
         <p className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
@@ -47,7 +47,7 @@ function Banner() {
 function Specs() {
   return (
     <div className="flex flex-col md:flex-row mt-16 p-2 ">
-      <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-lg shadow-blue-300">
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-100 rounded-lg hover:shadow-sm duration-100">
         <BsFillBookFill className="text-5xl " />
         <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
         <p>
@@ -59,7 +59,7 @@ function Specs() {
         </p>
       </div>
 
-      <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-lg shadow-blue-300">
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl  shadow-gray-100 rounded-lg hover:shadow-sm duration-100">
         <BsFillBookFill className="text-5xl " />
 
         <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
@@ -72,7 +72,7 @@ function Specs() {
         </p>
       </div>
 
-      <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-lg shadow-blue-300">
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-100 rounded-lg hover:shadow-sm duration-100">
         <BsFillBookFill className="text-5xl " />
 
         <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
@@ -90,7 +90,7 @@ function Specs() {
 
 function Plug({img}) {
   return (
-    <div className="flex flex-col justify-center items-center mt-16">
+    <div className="flex flex-col justify-center items-center mt-16 rounded-lg mx-16">
       <div className="w-full relative">
         <img src={img ||Iamnew} className="h-72 rounded-xl w-full object-cover" />
         <div className="flex flex-col absolute top-1/2 px-6">
@@ -107,23 +107,23 @@ function Plug({img}) {
 function Events() {
   return (
     <div className="">
-      <h1 className="text-xl font-bold mt-16">Upcoming Events</h1>
-      <div className="flex md:flex-row flex-col">
-        <div className="bg-gray-100 shadow-xl m-3 p-3 hover:shadow-2xl shadow-red-200">
+      <h1 className="text-3xl font-bold mt-16 text-center ">Upcoming Events</h1>
+      <div className="flex md:flex-row flex-col mt-16">
+        <div className="bg-gray-100 rounded-lg shadow-sm m-4 mt p-3 hover:shadow-2xl shadow-gray-400">
           <img src="https://res.cloudinary.com/thechurchcoproduction/image/fetch/f_auto/https://registrations-production.s3.amazonaws.com/uploads/event/logo/1575824/medium_image-1672931147591.jpeg" />
           <p className="text-xl text-left p-4 font-bold">
             Women's Spring Retreat
           </p>
           <p className="text text-left px-4 font-bold"> April 14-15 2023</p>
         </div>
-        <div className="bg-gray-100 shadow-xl m-3 p-3 hover:shadow-2xl shadow-red-200">
+        <div className="bg-gray-100 rounded-lg shadow-sm m-4 p-3 hover:shadow-2xl shadow-gray-400">
           <img src="https://res.cloudinary.com/thechurchcoproduction/image/fetch/f_auto/https://registrations-production.s3.amazonaws.com/uploads/event/logo/1666491/medium_image-1677800374034.jpg" />
           <p className="text-xl text-left p-4 font-bold">
             Women's Spring Retreat
           </p>
           <p className="text text-left px-4 font-bold"> April 14-15 2023</p>
         </div>{" "}
-        <div className="bg-gray-100 shadow-xl m-3 p-3 hover:shadow-2xl shadow-red-200">
+        <div className="bg-gray-100 rounded-lg shadow-sm m-4 p-3 hover:shadow-2xl shadow-gray-400">
           <img src="https://registrations-production.s3.amazonaws.com/uploads/event/logo/1565920/medium_image-1672938905846.jpg" />
           <p className="text-xl text-left p-4 font-bold">
             Women's Spring Retreat

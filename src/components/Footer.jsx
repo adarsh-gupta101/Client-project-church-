@@ -1,10 +1,10 @@
 import React from "react";
 import { BsFacebook, BsInstagram, BsSpotify, BsTwitter, BsYoutube } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdPhone, MdWbTwilight, MdWhatsapp } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="bg-black text-white mt-16 p-16">
+    <div className="bg-black text-white mt-16 p-16 m-3">
       <div className="flex flex-col md:flex-row justify-evenly items-center">
         <div className="flex flex-col justify-center items-center">
           <MdEmail className="text-5xl" />
@@ -13,19 +13,19 @@ function Footer() {
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <MdEmail className="text-5xl" />
+          <MdPhone className="text-5xl" />
           <p>Email Us</p>
           <p>Church@rmail.com</p>
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <MdEmail className="text-5xl" />
+          <MdWhatsapp className="text-5xl" />
           <p>Email Us</p>
           <p>Church@rmail.com</p>
         </div>
 
         <div className="flex flex-col justify-center items-center">
-          <MdEmail className="text-5xl" />
+          <MdWbTwilight className="text-5xl" />
           <p>Email Us</p>
           <p>Church@rmail.com</p>
         </div>
