@@ -9,7 +9,7 @@ function Banner() {
   
   return (
     <div className="bg-[#00a9e0] px-4 py-4 flex justify-evenly items-center h-18">
-      <p className="text-gray-100 font-bold text-center">Online or Onsite | Sundays @ 10:30 am | 14313 NE 20th Ave, A104, Vancouver, WA 98686</p>
+      <p className="text-gray-100 font-bold text-center">Online or onsite | Sundays @ 9:30am |  16 Mafukachuma Road , Zengeza 2</p>
       <button className="text-gray-100 text-xl hover:text-gray-900" onClick={() => setShowBanner(false)}>&times;</button>
     </div>
   );

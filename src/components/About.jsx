@@ -42,7 +42,6 @@ function Banner({ img }) {
             <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
               Our Team
             </p>{" "}
-            
           </div>
         </div>
       </div>
@@ -182,7 +181,7 @@ function Story() {
 }
 
 function Team() {
-  const data = [
+  const Mdata = [
     {
       name: "Mr C zengeza",
       position: "Men Fellowship",
@@ -207,15 +206,77 @@ function Team() {
       image:
         "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
-    {},
+    {
+      name: "Mr and Mrs C Zengeza",
+      position: "Kids Ministry",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+
+    },
+    {
+      name: "Mr and Mrs C Zengeza",
+      position: "Workship Ministry",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+
+    },
+    {
+name:"Mr C Zengeza",
+      position:"Tech Team",
+      image:"https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+    },
+    {
+      position:"Welcome Team",
+      image:"https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+      name: "Mr C Zengeza"
+
+    },
+    {
+      name: "Mr C Zengeza",
+      position: "Events and Outreach Team",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+
+    },
+    {
+      name: "Mr C Zengeza",
+      position: "Response team",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+    }
+  ];
+
+  const data = [
+    {
+      name: "Pastor and Mrs Chunga",
+      position: "Senior Pastors",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+  
+    },
+    {
+      name: "Pastor and Mrs Chunga",
+      position: "Senior Pastors",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+  
+    },
+    {
+      name: "Mr C Tapera",
+      position: "Elder",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+
+    },
+    {
+      name: "Mr P Kachipwa",
+      position: "Elder",
+      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+
+    },
   ];
   return (
-    <div className="bg-[#00a9e0] m-4 mt-16 pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
-      <p className="text-3xl font-bold text-center text-white">
-        Ministry Leaders
+    <div>
+
+    <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
+      <p className="text-3xl font-bold text-center text-white pt-8">
+        Our Team{" "}
       </p>
 
-      <div className="flex lg:flex-row flex-col justify-between items-center mt-16">
+      <div className="flex lg:flex-row flex-col justify-evenly items-center mt-16 p-2">
         {data.map((item) => (
           <div className="flex flex-col items-center justify-center mt-4">
             <img src={item.image} className="w-3/4 h-2/4 rounded shadow-lg" />
@@ -227,5 +288,40 @@ function Team() {
         ))}
       </div>
     </div>
+
+    <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
+      <p className="text-3xl font-bold text-center text-white pt-8">
+        Ministry Leaders
+      </p>
+
+
+<div className="flex flex-wrap items-center justify-center">
+
+{
+
+
+    Mdata.map((item) => {
+      return(
+
+      <div className="p-2 mt-8">
+        <img src={item.image} className="w-72 h-72 rounded shadow-lg" />
+        <p className="text-white font-bold text-xl mt-10">{item.name}</p>
+            <p className="text-white font-normal text-xl mt-4">
+              {item.position}
+            </p>
+        </div>
+      )
+    })
+}
+</div>
+
+
+
+      </div>
+      </div>
+
+
+
+  
   );
 }

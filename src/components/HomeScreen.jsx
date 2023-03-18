@@ -49,7 +49,7 @@ function Banner() {
       <div className="relative   ">
         <img
           src={banner}
-          className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
+          className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden object-left md:object-center"
           style={{ height: 600 }}
         />
         <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
@@ -79,33 +79,34 @@ function Specs() {
           Sunday Teachings & other series.
         </p>
         <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-          Watch Now
+          WATCH NOW{" "}
         </p>
       </div>
 
-      <div className="bg-gray-100 p-6 flex flex-col justify-center items-center m-2 shadow-xl  shadow-gray-200 rounded-lg hover:shadow-sm duration-100">
+      <div className="bg-gray-100 p-8 mt-4 flex flex-col justify-center items-center m-2 shadow-xl  shadow-gray-200 rounded-lg hover:shadow-sm duration-100">
         <GiWorld className="text-5xl " />
 
-        <h3 className="font-bold text-xl p-2 mt-4">Watch Latest Teaching</h3>
+        <h3 className="font-bold text-xl p-2 mt-4 text-center">
+          What To Expect At Gatherings
+        </h3>
         <p className="text-center">
-          Join us on our journey to live our faith every day. Browse prior
-          Sunday Teachings & other series.
+          Large and small group gatherings throughout the week in Vancouver, WA.
         </p>
         <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-          Watch Now
+          DIRECTIONS DETAILS{" "}
         </p>
       </div>
 
-      <div className="bg-gray-100 p-6 flex flex-col justify-center items-center m-2 shadow-xl  shadow-gray-200  rounded-lg hover:shadow-sm duration-100">
+      <div className="bg-gray-100 p-8 flex mt-4 flex-col justify-center items-center m-2 shadow-xl  shadow-gray-200  rounded-lg hover:shadow-sm duration-100">
         <GiCircleForest className="text-5xl " />
 
-        <h3 className="font-bold text-xl p-2 mt-4">Watch Latest Teaching</h3>
+        <h3 className="font-bold text-xl p-2 mt-4">Why Jesus?</h3>
         <p className="text-center">
-          Join us on our journey to live our faith every day. Browse prior
-          Sunday Teachings & other series.
+          Resources about faith, what we believe, and how we help people find
+          spiritual direction.
         </p>
         <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-          Watch Now
+          DISCOVER{" "}
         </p>
       </div>
     </div>
@@ -121,7 +122,9 @@ function Plug({ img, title, button_name }) {
           className="h-72 rounded-xl w-full object-cover object-center brightness-75	"
         />
         <div className="flex flex-col absolute top-1/2 px-6">
-          <p className="text-2xl md:text-5xl font-bold text-white">{title || "I'm New"}</p>
+          <p className="text-2xl md:text-5xl font-bold text-white">
+            {title || "I'm New"}
+          </p>
           <p className=" cursor-pointer mt-5 text-xl border-gray-100 p-2 px-6 w-fit rounded-xl  text-white bg-[#00a9e0] hover:bg-black hover:text-white duration-150 ease-linear">
             {button_name || " Start here"}{" "}
           </p>
@@ -135,34 +138,38 @@ function Events() {
   const eventData = [
     {
       imageSrc: bible,
-      title: 'Bible Exploits',
-      date: 'Every Wednesday',
+      title: "Bible Exploits",
+      date: "Every Wednesday",
     },
     {
-      imageSrc: 'https://images.pexels.com/photos/7440146/pexels-photo-7440146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      title: 'Good Friday Service',
-      date: 'April 7, 2023',
+      imageSrc:
+        "https://images.pexels.com/photos/7440146/pexels-photo-7440146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      title: "Good Friday Service",
+      date: "April 7, 2023",
     },
     {
-      imageSrc: 'https://images.pexels.com/photos/7038548/pexels-photo-7038548.jpeg?auto=compress&cs=tinysrgb&w=600',
-      title: 'Easter 2023',
-      date: 'April 14-15, 2023',
+      imageSrc:
+        "https://images.pexels.com/photos/7038548/pexels-photo-7038548.jpeg?auto=compress&cs=tinysrgb&w=600",
+      title: "Easter 2023",
+      date: "April 14-15, 2023",
     },
   ];
   return (
     <div className="">
-    <h1 className="text-4xl font-extrabold mt-20 text-center ">Upcoming Events</h1>
-    <div className="flex md:flex-row flex-col mt-16">
-      {eventData.map((event) => (
-        <EventCard
-          key={event.title}
-          imageSrc={event.imageSrc}
-          title={event.title}
-          date={event.date}
-        />
-      ))}
+      <h1 className="text-4xl font-extrabold mt-20 text-center ">
+        Upcoming Events
+      </h1>
+      <div className="flex md:flex-row flex-col mt-16">
+        {eventData.map((event) => (
+          <EventCard
+            key={event.title}
+            imageSrc={event.imageSrc}
+            title={event.title}
+            date={event.date}
+          />
+        ))}
+      </div>
     </div>
-  </div>
   );
 }
 
