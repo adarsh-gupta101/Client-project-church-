@@ -22,7 +22,7 @@ function Navbar() {
             className="w-24 h-24 object-cover"
             src={logo}
           />
-          <p>Zenegeza Baptist Church </p>
+          <p>Zengeza Baptist Church </p>
         </Link>
         <div className="bhm flex md:hidden">
           <Hamburger
@@ -34,13 +34,13 @@ function Navbar() {
             className="bhm flex md:hidden z-50"
           />
         </div>
-        <div className=" justify-evenly items-center w-2/4 hidden md:flex font-bold">
+        <div className=" justify-evenly items-center w-2/4 hidden md:flex font-extrabold">
        
        <Link to="/about">ABOUT</Link> 
        <Link to="/events">EVENTS</Link>
         <Link to="/gather">GATHER</Link>
-        <Link to="/group">Group</Link>
-        <Link to="/new">New</Link>
+        <Link to="/group">GROUP</Link>
+        <Link to="/new">NEW</Link>
             
 
         
@@ -48,12 +48,12 @@ function Navbar() {
         </div>
 
         {open && (
-          <div className="bg-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around items-center py-24 h-screen top-0 z-40 absolute left-0 font-bold">
+          <div className="bg-[#00a9e0] text-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around items-center py-24 h-screen top-0 z-40 absolute left-0 font-bold">
              <Link to="/about">ABOUT</Link> 
        <Link to="/events">EVENTS</Link>
         <Link to="/gather">GATHER</Link>
-        <Link to="/group">Group</Link>
-        <Link to="/new">New</Link>
+        <Link to="/group">GROUP</Link>
+        <Link to="/new">NEW</Link>
           </div>
         )}
       </div>
@@ -72,10 +72,10 @@ function Modal() {
         onClick={() => setIsOpen(!isOpen)}
         data-modal-target="defaultModal"
         data-modal-toggle="defaultModal"
-        className=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg py-2 px-4 text-xl text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className=" text-white font-bold bg-[#00a9e0] cursor-pointer hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg py-2 px-4 text-xl text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         type="button"
       >
-        Give
+        GIVE
       </p>
 
       {isOpen && (
@@ -111,10 +111,10 @@ function Modal() {
                     />
 
                     <h3
-                      class="text-lg leading-6 font-medium text-gray-900"
+                      class="text-lg leading-6 font-bold text-gray-900"
                       id="modal-title"
                     >
-                      Give{" "}
+                      GIVE{" "}
                     </h3>
                     {/* an input tag */}
                     <input
