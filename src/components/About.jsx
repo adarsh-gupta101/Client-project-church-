@@ -27,9 +27,9 @@ function Banner({ img }) {
           className="mt-12  rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
+        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-6 md:left-32">
           <p>ABOUT US </p>{" "}
-          <div className="flex  flex-wrap">
+          <div className="flex flex-wrap">
             <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
               Our Vision
             </p>
@@ -42,9 +42,7 @@ function Banner({ img }) {
             <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
               Our Team
             </p>{" "}
-            <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
-              Our Partners
-            </p>
+            
           </div>
         </div>
       </div>
