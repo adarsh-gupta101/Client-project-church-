@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import HomeScreen from './components/HomeScreen'
-import Banner from './components/Promotion'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import HomeScreen from "./components/HomeScreen";
+import Banner from "./components/Promotion";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="">
       <Banner />
 
-<HomeScreen/>      
+      <HomeScreen />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

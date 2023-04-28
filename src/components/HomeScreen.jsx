@@ -155,7 +155,7 @@ function Events() {
     },
   ];
   return (
-    <div className="">
+    <div className="mx-2 md:mx-16">
       <h1 className="text-4xl font-extrabold mt-20 text-center ">
         Upcoming Events
       </h1>
@@ -175,7 +175,7 @@ function Events() {
 
 function EventCard({ imageSrc, title, date }) {
   return (
-    <div className="bg-gray-100 md:w-1/3 rounded-lg shadow-sm m-4 mt p-3 hover:shadow-2xl shadow-gray-400">
+    <div className="bg-gray-100 hover:scale-105 duration-200 md:w-1/3 rounded-lg shadow-sm m-4 mt p-3 hover:shadow-2xl shadow-gray-400">
       <img src={imageSrc} className="" />
       <p className="text-xl text-left p-4 font-bold">{title}</p>
       <p className="text text-left px-4 font-bold">{date}</p>

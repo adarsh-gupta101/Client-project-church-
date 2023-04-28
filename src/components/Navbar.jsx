@@ -1,27 +1,16 @@
 import Hamburger from "hamburger-react";
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [open, setopen] = React.useState(false);
-
-  //   set open to true only if window size is less than 768px
-
-  // React.useEffect(() => {
-  //     if (window.innerWidth < 768) {
-  //         setopen(true);
-  //     }
-  // }, []);
 
   return (
     <div className="p-4 z-10 bg-white sticky top-0">
       <div className="flex justify-between items-center">
         <Link to="/" className="flex items-center font-bold text-xl">
-          <img
-            className="w-24 h-24 object-cover"
-            src={logo}
-          />
+          <img className="w-24 h-24 object-cover" src={logo} />
           <p>Zengeza Baptist Church </p>
         </Link>
         <div className="bhm flex md:hidden">
@@ -35,25 +24,22 @@ function Navbar() {
           />
         </div>
         <div className=" justify-evenly items-center w-2/4 hidden md:flex font-extrabold">
-       
-       <Link to="/about">ABOUT</Link> 
-       <Link to="/events">EVENTS</Link>
-        <Link to="/gather">GATHER</Link>
-        <Link to="/group">GROUP</Link>
-        <Link to="/new">NEW</Link>
-            
+          <Link to="/about">ABOUT</Link>
+          <Link to="/events">EVENTS</Link>
+          <Link to="/gather">GATHER</Link>
+          <Link to="/group">GROUPS</Link>
+          <Link to="/new">I'M NEW</Link>
 
-        
           <Modal />
         </div>
 
         {open && (
           <div className="bg-[#00a9e0] text-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around items-center py-24 h-screen top-0 z-40 absolute left-0 font-bold">
-             <Link to="/about">ABOUT</Link> 
-       <Link to="/events">EVENTS</Link>
-        <Link to="/gather">GATHER</Link>
-        <Link to="/group">GROUP</Link>
-        <Link to="/new">NEW</Link>
+            <Link to="/about">ABOUT</Link>
+            <Link to="/events">EVENTS</Link>
+            <Link to="/gather">GATHER</Link>
+            <Link to="/group">GROUP</Link>
+            <Link to="/new">NEW</Link>
           </div>
         )}
       </div>

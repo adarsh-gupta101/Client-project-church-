@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 const GatherData = [
-
   {
     img: "https://images.pexels.com/photos/3700250/pexels-photo-3700250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "10.30 Gathering",
@@ -28,9 +27,9 @@ function Gathering() {
       <Navbar />
       <Banner img="https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/2833037/pexels-photo-2833037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
       <GatherSection GatherData={GatherData} />
-      <Values/>
-      <Specs/>
-      <Footer/>
+      <Values />
+      <Specs />
+      <Footer />
     </div>
   );
 }
@@ -39,12 +38,14 @@ export default Gathering;
 
 function GatherSection({ GatherData }) {
   return (
-    <div className="flex flex-wrap flex-col md:flex-row justify-around items-center ">
-        
+    <div className="flex flex-wrap flex-col md:flex-row justify-center items-center ">
       {GatherData.map((item) => {
         return (
-          <div className="md:w-1/3 mt-16 my-4 shadow-sm hover:shadow h-90 m-auto p-4 bg-gray-100 mx-2">
-            <img src={item.img} className="w-full  h-64 object-cover overflow-hidden"/>
+          <div className="md:w-1/3 hover:scale-105 duration-200 mt-16 my-4 shadow-sm hover:shadow h-90 m-auto p-4 bg-gray-100 mx-2">
+            <img
+              src={item.img}
+              className="w-full  h-64 object-cover overflow-hidden"
+            />
             <p className="text-xl font-bold py-2">{item.title}</p>
             <p className="text-gray-400">{item.desc}</p>
           </div>
@@ -54,65 +55,59 @@ function GatherSection({ GatherData }) {
   );
 }
 
-
-
 function Values() {
-    return (
-      <div class="bg-blue-400 m-4 pt-16 duration-200 ease-in-out transition-colors shadow-lg hover:bg-blue-500">
-        <p class="text-3xl font-bold text-center text-white">Values</p>
-  
-        <div class=" text-center mt-16 p-2  w-3/4 m-auto m-2">
-          <div class="w-3/4 m-auto my-4 py-4 group font-bold  transition-all duration-300 ease-in-out">
-            <h3 className="font-bold bg-white p-4 rounded shadow-xl">
-              Get Over Get
-            </h3>
-            <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
-              Looking to make a difference in the lives of others and our
-              community through generous living rather than always wanting to
-              receive more.
-            </p>
-          </div>
-  
-          <div class="w-3/4 m-auto my-4 py-4 group font-bold  transition-all duration-300 ease-in-out">
-            <h3 className="font-bold bg-white p-4 rounded shadow-xl">
-              Get Over Get
-            </h3>
-            <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
-              Looking to make a difference in the lives of others and our
-              community through generous living rather than always wanting to
-              receive more.
-            </p>
-          </div>
-  
-          <div class="w-3/4 m-auto my-2 py-4 group font-bold  transition-all duration-300 ease-in-out">
-            <h3 className="font-bold bg-white p-4 rounded shadow-xl">
-              Get Over Get
-            </h3>
-            <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
-              Looking to make a difference in the lives of others and our
-              community through generous living rather than always wanting to
-              receive more.
-            </p>
-          </div>
-  
-          <div class="w-3/4 m-auto my-2 py-4 group font-bold  transition-all duration-300 ease-in-out">
-            <h3 className="font-bold bg-white p-4 rounded shadow-xl">
-              Get Over Get
-            </h3>
-            <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
-              Looking to make a difference in the lives of others and our
-              community through generous living rather than always wanting to
-              receive more.
-            </p>
-          </div>
-        </div>
-  
-        
-      </div>
-    );
-  }
-  
+  return (
+    <div class="bg-[#00a9e0] m-4 pt-16 duration-200 ease-in-out transition-colors shadow-lg hover:bg-[#00a9e6]">
+      <p class="text-3xl font-bold text-center text-white">Values</p>
 
+      <div class=" text-center mt-16 p-2  w-3/4 m-auto m-2">
+        <div class="w-3/4 m-auto my-4 py-4 group font-bold  transition-all duration-300 ease-in-out">
+          <h3 className="font-bold bg-white p-4 rounded shadow-xl">
+            Get Over Get
+          </h3>
+          <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
+            Looking to make a difference in the lives of others and our
+            community through generous living rather than always wanting to
+            receive more.
+          </p>
+        </div>
+
+        <div class="w-3/4 m-auto my-4 py-4 group font-bold  transition-all duration-300 ease-in-out">
+          <h3 className="font-bold bg-white p-4 rounded shadow-xl">
+            Get Over Get
+          </h3>
+          <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
+            Looking to make a difference in the lives of others and our
+            community through generous living rather than always wanting to
+            receive more.
+          </p>
+        </div>
+
+        <div class="w-3/4 m-auto my-2 py-4 group font-bold  transition-all duration-300 ease-in-out">
+          <h3 className="font-bold bg-white p-4 rounded shadow-xl">
+            Get Over Get
+          </h3>
+          <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
+            Looking to make a difference in the lives of others and our
+            community through generous living rather than always wanting to
+            receive more.
+          </p>
+        </div>
+
+        <div class="w-3/4 m-auto my-2 py-4 group font-bold  transition-all duration-300 ease-in-out">
+          <h3 className="font-bold bg-white p-4 rounded shadow-xl">
+            Get Over Get
+          </h3>
+          <p class="mt-1 text-center text-white group-hover:p-4 opacity-0 h-0 group-hover:h-fit transition-opacity duration-100   group-hover:flex group-hover:opacity-100">
+            Looking to make a difference in the lives of others and our
+            community through generous living rather than always wanting to
+            receive more.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Banner({ img }) {
   return (
@@ -145,48 +140,46 @@ function Banner({ img }) {
   );
 }
 
-
 function Specs() {
-    return (
-      <div className="flex flex-col md:flex-row mt-16 p-2 ">
-        <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
-          <BsFillBookFill className="text-5xl " />
-          <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
-          <p>
-            Join us on our journey to live our faith every day. Browse prior
-            Sunday Teachings & other series.
-          </p>
-          <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-            Watch Now
-          </p>
-        </div>
-  
-        <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
-          <BsFillBookFill className="text-5xl " />
-  
-          <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
-          <p>
-            Join us on our journey to live our faith every day. Browse prior
-            Sunday Teachings & other series.
-          </p>
-          <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-            Watch Now
-          </p>
-        </div>
-  
-        <div className="bg-gray-300 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
-          <BsFillBookFill className="text-5xl " />
-  
-          <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
-          <p>
-            Join us on our journey to live our faith every day. Browse prior
-            Sunday Teachings & other series.
-          </p>
-          <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
-            Watch Now
-          </p>
-        </div>
+  return (
+    <div className="flex flex-col md:flex-row mt-16 p-2 ">
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
+        <BsFillBookFill className="text-5xl " />
+        <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
+        <p>
+          Join us on our journey to live our faith every day. Browse prior
+          Sunday Teachings & other series.
+        </p>
+        <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
+          Watch Now
+        </p>
       </div>
-    );
-  }
-  
+
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
+        <BsFillBookFill className="text-5xl " />
+
+        <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
+        <p>
+          Join us on our journey to live our faith every day. Browse prior
+          Sunday Teachings & other series.
+        </p>
+        <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
+          Watch Now
+        </p>
+      </div>
+
+      <div className="bg-gray-200 p-6 flex flex-col justify-center items-center m-2 shadow-xl shadow-gray-300 hover:shadow-sm duration-100">
+        <BsFillBookFill className="text-5xl " />
+
+        <h3 className="font-bold text-xl p-2">Watch Latest Teaching</h3>
+        <p>
+          Join us on our journey to live our faith every day. Browse prior
+          Sunday Teachings & other series.
+        </p>
+        <p className="border border-gray-600 p-2 rounded-xl mt-8 hover:bg-black hover:text-white duration-150 ease-linear">
+          Watch Now
+        </p>
+      </div>
+    </div>
+  );
+}
