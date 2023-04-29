@@ -28,7 +28,7 @@ function Banner({ img }) {
           style={{ height: 600 }}
         />
         <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-6 md:left-32">
-          <p className="m-4">ABOUT US </p>{" "}
+          <p className="m-4 px-4">ABOUT US </p>{" "}
           <div className="flex flex-wrap justify-start items-center p-2">
             <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
               Our Vision

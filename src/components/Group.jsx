@@ -155,18 +155,16 @@ function Banner({ img }) {
           style={{ height: 600 }}
         />
         <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
-          <p>Groups</p>{" "}
-          <p className="text-xl py-4 p-1">
+          <p className="m-4">Groups</p>{" "}
+          <p className="text-xl py-4 p-1 m-4">
             We have several departments that are designed to help you connect
             with others and grow in your faith.
           </p>
-          <div className="flex  flex-wrap justify-start items-center ">
+          <div className="flex flex-wrap justify-start items-center ">
             <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>
-            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
-              Our Vision
-            </p>
+           
             <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>

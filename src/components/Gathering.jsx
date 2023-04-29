@@ -118,12 +118,12 @@ function Banner({ img }) {
           className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
-          <p>Gatherings</p>{" "}
-          <p className="text-xl py-4">
+        <div className="text-3xl  md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
+          <p className="px-4">Gatherings</p>{" "}
+          <p className="text-xl py-4 px-4">
             We have multiple ways, locations, and times to gather.
           </p>
-          <div className="flex flex-wrap justify-start items-center p-2">
+          <div className="flex flex-wrap justify-start items-center ">
             <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>

@@ -146,9 +146,9 @@ function Banner({ img }) {
           className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
-          <p>NEW(ISH) TO GENERATIONS CHURCH?</p>{" "}
-          <p className="text-xl py-4">
+        <div className="text-3xl md:text-6xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
+          <p className="m-4">NEW(ISH) TO GENERATIONS CHURCH?</p>{" "}
+          <p className="text-xl py-1 m-4">
             You're in the right place! (scroll down)
           </p>
           <div className="flex  flex-wrap justify-start items-center">
