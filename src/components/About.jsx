@@ -20,16 +20,16 @@ export default About;
 
 function Banner({ img }) {
   return (
-    <div className=" w-full p-1 ">
+    <div className=" w-full p-1 bg-red-100 min-h-fit">
       <div className="relative   ">
         <img
           src={img || banner}
-          className="mt-12  rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
+          className="mt-12  rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 min-h-fit	 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-6 md:left-32">
-          <p>ABOUT US </p>{" "}
-          <div className="flex flex-wrap">
+        <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-6 md:left-32">
+          <p className="m-4">ABOUT US </p>{" "}
+          <div className="flex flex-wrap justify-start items-center p-2">
             <p className="bg-[#00a9e0] my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold m-4 text-xl">
               Our Vision
             </p>
@@ -183,7 +183,7 @@ function Story() {
 function Team() {
   const Mdata = [
     {
-      name: "Mr C zengeza",
+      name: "Mr C ",
       position: "Men Fellowship",
       image:
         "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/1.png",
@@ -209,119 +209,108 @@ function Team() {
     {
       name: "Mr and Mrs C Zengeza",
       position: "Kids Ministry",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
       name: "Mr and Mrs C Zengeza",
       position: "Workship Ministry",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
-name:"Mr C Zengeza",
-      position:"Tech Team",
-      image:"https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+      name: "Mr C Zengeza",
+      position: "Tech Team",
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
-      position:"Welcome Team",
-      image:"https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-      name: "Mr C Zengeza"
-
+      position: "Welcome Team",
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+      name: "Mr C Zengeza",
     },
     {
       name: "Mr C Zengeza",
       position: "Events and Outreach Team",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
       name: "Mr C Zengeza",
       position: "Response team",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-    }
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
+    },
   ];
 
   const data = [
     {
       name: "Pastor and Mrs Chunga",
       position: "Senior Pastors",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-  
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
       name: "Pastor and Mrs Chunga",
       position: "Senior Pastors",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-  
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
       name: "Mr C Tapera",
       position: "Elder",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
     {
       name: "Mr P Kachipwa",
       position: "Elder",
-      image: "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
-
+      image:
+        "https://thechurchco-production.s3.amazonaws.com/uploads/sites/1974/2020/08/3.png",
     },
   ];
   return (
     <div>
+      <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
+        <p className="text-3xl font-bold text-center text-white pt-8">
+          Our Team{" "}
+        </p>
 
-    <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
-      <p className="text-3xl font-bold text-center text-white pt-8">
-        Our Team{" "}
-      </p>
+        <div className="flex lg:flex-row flex-col justify-evenly items-center mt-16 p-2">
+          {data.map((item) => (
+            <div className="flex flex-col items-center justify-center mt-4">
+              <img src={item.image} className="w-3/4 h-2/4 rounded shadow-lg" />
+              <p className="text-white font-bold text-xl mt-10">{item.name}</p>
+              <p className="text-white font-normal text-xl mt-4">
+                {item.position}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-      <div className="flex lg:flex-row flex-col justify-evenly items-center mt-16 p-2">
-        {data.map((item) => (
-          <div className="flex flex-col items-center justify-center mt-4">
-            <img src={item.image} className="w-3/4 h-2/4 rounded shadow-lg" />
-            <p className="text-white font-bold text-xl mt-10">{item.name}</p>
-            <p className="text-white font-normal text-xl mt-4">
-              {item.position}
-            </p>
-          </div>
-        ))}
+      <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
+        <p className="text-3xl font-bold text-center text-white pt-8">
+          Ministry Leaders
+        </p>
+
+        <div className="flex flex-wrap items-center justify-center">
+          {Mdata.map((item) => {
+            return (
+              <div className="p-2 mt-8">
+                <img src={item.image} className="w-72 h-72 rounded shadow-lg" />
+                <p className="text-white font-bold text-xl mt-10">
+                  {item.name}
+                </p>
+                <p className="text-white font-normal text-xl mt-4">
+                  {item.position}
+                </p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
-
-    <div className="bg-[#00a9e0] m-4 mt-16  pb-16 pt-16 rounded duration-200 ease-in-out transition-colors shadow-lg ">
-      <p className="text-3xl font-bold text-center text-white pt-8">
-        Ministry Leaders
-      </p>
-
-
-<div className="flex flex-wrap items-center justify-center">
-
-{
-
-
-    Mdata.map((item) => {
-      return(
-
-      <div className="p-2 mt-8">
-        <img src={item.image} className="w-72 h-72 rounded shadow-lg" />
-        <p className="text-white font-bold text-xl mt-10">{item.name}</p>
-            <p className="text-white font-normal text-xl mt-4">
-              {item.position}
-            </p>
-        </div>
-      )
-    })
-}
-</div>
-
-
-
-      </div>
-      </div>
-
-
-
-  
   );
 }

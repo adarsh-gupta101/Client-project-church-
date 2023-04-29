@@ -2,14 +2,16 @@ import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const GroupData = [
+const Departmentdata = [
   {
     img: "https://groups-production.s3.amazonaws.com/uploads/group/header_image/1999128/medium_image-1676482069386.jpg",
     title: "Men's Fellowship",
+    desc: "He is an artist here to c",
   },
   {
     img: "https://groups-production.s3.amazonaws.com/uploads/group/header_image/1705919/medium_image-1646943626722.jpg",
     title: "Ladies Ruwadzano",
+    desc: "He is an artist here to c",
   },
   {
     img: "https://images.pexels.com/photos/8815250/pexels-photo-8815250.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -33,10 +35,12 @@ const ministryData = [
   {
     img: "https://images.pexels.com/photos/976866/pexels-photo-976866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Praise and Worship",
+    desc: "He is an artist here to c",
   },
   {
     img: "https://images.pexels.com/photos/372326/pexels-photo-372326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     title: "Ushering",
+    desc: "lorem ipsum loipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
   },
   {
     img: "https://groups-production.s3.amazonaws.com/uploads/group/header_image/1523281/medium_image-1675725201125.jpg",
@@ -89,10 +93,11 @@ function Activity() {
         others and grow in your faith.{" "}
       </p>
       <div className="flex mt-16 flex-wrap md:flex-row flex-col justify-center">
-        {GroupData.map((item) => (
+        {Departmentdata.map((item) => (
           <div className="bg-gray-50 hover:scale-105 duration-200 rounded-lg shadow-sm hover:shadow md:w-1/4 my-4 m-4 mt p-3 shadow-gray-400">
             <img src={item.img} className="" />
             <p className="text-left p-4 text-2xl font-bold">{item.title}</p>
+            <p className="text-left p-4 text-xl ">{item.desc}</p>
           </div>
         ))}
       </div>
@@ -106,6 +111,7 @@ function Activity() {
             <div className="bg-gray-50 hover:scale-105 duration-200 m-4 shadow-sm rounded-lg hover:shadow md:w-1/4  my-4 mt p-3 shadow-gray-400">
               <img src={item.img} className="h-72 object-cover" />
               <p className="text-left p-4 text-2xl font-bold">{item.title}</p>
+              <p className="text-left p-4 text-xl ">{item.desc}</p>
             </div>
           ))}
         </div>
@@ -148,20 +154,20 @@ function Banner({ img }) {
           className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
+        <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
           <p>Groups</p>{" "}
-          <p className="text-xl py-4">
+          <p className="text-xl py-4 p-1">
             We have several departments that are designed to help you connect
             with others and grow in your faith.
           </p>
-          <div className="flex  flex-wrap ">
-            <p className="bg-blue-600 my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+          <div className="flex  flex-wrap justify-start items-center ">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>
-            <p className="bg-blue-600 m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>
-            <p className="bg-blue-600 m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Our Vision
             </p>
           </div>

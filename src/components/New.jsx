@@ -105,7 +105,7 @@ function Aboutus(){
         return (
           <div className="mt-16">
             <p className="text-center text-3xl ">Activity Groups</p>
-            <p className="text-center ">
+            <p className="text-center p-4">
               Activity groups are a great way to connect with others around
               Generations Church with no strings attached.
             </p>
@@ -146,19 +146,19 @@ function Banner({ img }) {
           className="mt-12 rounded-xl brightness-[0.5] object-cover w-11/12 h-9/12 m-auto overflow-hidden"
           style={{ height: 600 }}
         />
-        <div className="text-3xl md:text-7xl absolute top-1/2 text-white font-bold left-8 md:left-32">
+        <div className="text-3xl md:text-7xl absolute top-1/4 md:top-1/2 text-white font-bold left-8 md:left-32">
           <p>NEW(ISH) TO GENERATIONS CHURCH?</p>{" "}
           <p className="text-xl py-4">
             You're in the right place! (scroll down)
           </p>
-          <div className="flex  flex-wrap">
-            <p className="bg-blue-600 my-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+          <div className="flex  flex-wrap justify-start items-center">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Gather{" "}
             </p>
-            <p className="bg-blue-600 m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Grow{" "}
             </p>
-            <p className="bg-blue-600 m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
+            <p className="bg-[#00a9e0] m-4 w-fit p-2 px-4 rounded mt-4 text-white font-bold text-xl">
               Go{" "}
             </p>
           </div>
@@ -176,7 +176,7 @@ function NewSection() {
           We can't wait to meet you!
         </p>
 
-        <p className="text-xl p-4 my-4 text-center w-1/2 m-auto">
+        <p className="text-xl p-4 my-4 md:text-center md:w-1/2 m-auto">
           We are a start up church in Vancouver, WA. We are everyday people who
           are committed to expanding God’s family because of Jesus for
           generations to come. We would love to connect with you! We understand
