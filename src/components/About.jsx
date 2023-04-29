@@ -20,7 +20,7 @@ export default About;
 
 function Banner({ img }) {
   return (
-    <div className=" w-full p-1 bg-red-100 min-h-fit">
+    <div className=" w-full p-1 bg100 min-h-fit">
       <div className="relative   ">
         <img
           src={img || banner}
