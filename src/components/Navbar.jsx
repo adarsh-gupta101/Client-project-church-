@@ -35,11 +35,11 @@ function Navbar() {
 
         {open && (
           <div className="bg-[#00a9e0] text-white transition-all ease-in-out duration-100 flex md:hidden flex-col w-3/4 justify-around items-center py-24 h-screen top-0 z-40 absolute left-0 font-bold">
-            <Link to="/about">ABOUT</Link>
-            <Link to="/events">EVENTS</Link>
-            <Link to="/gather">GATHER</Link>
-            <Link to="/group">GROUP</Link>
-            <Link to="/new">NEW</Link>
+           <Link to="/about">ABOUT</Link>
+          <Link to="/events">EVENTS</Link>
+          <Link to="/gather">GATHER</Link>
+          <Link to="/group">GROUPS</Link>
+          <Link to="/new">I'M NEW</Link>
           </div>
         )}
       </div>
